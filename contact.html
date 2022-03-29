@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>University Website Design</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <!-- -----HEADER----- -->
+   <section class="sub-header">
+      <nav>
+         <a href="index.html"><img src="/img/logo.png" alt=""></a>
+         <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="about.html">ABOUT</a></li>
+               <li><a href="course.html">COURSE</a></li>
+               <li><a href="blog.html">BLOG</a></li>
+               <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+   </section>
+
+   <!-- -----CONTACT----- -->
+   <section class="location">
+      <iframe
+         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10546.671369325093!2d22.2903179!3d48.6353379!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfbe21c9853a085cd!2z0KPQttCz0L7RgNC-0LTRgdGM0LrQuNC5INC90LDRhtGW0L7QvdCw0LvRjNC90LjQuSDRg9C90ZbQstC10YDRgdC40YLQtdGC!5e0!3m2!1suk!2sua!4v1648563825652!5m2!1suk!2sua"
+         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+         referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </section>
+   <section class="contact-us">
+      <div class="row">
+         <div class="contact-col">
+            <div>
+               <a href="" target="_blank"><i class="fa fa-home"></i></a>
+               <span>
+                  <h5>University Road, 14</h5>
+                  <p>Uzhhorod Zakarpattya</p>
+               </span>
+            </div>
+            <div>
+               <a href="" target="_blank"><i class="fa fa-phone"></i></a>
+               <span>
+                  <h5>+312 00215486</h5>
+                  <p>Monday to Friday, 10:00 to 17:00</p>
+               </span>
+            </div>
+            <div>
+               <a href="" target="_blank"><i class="fa fa-envelope-o"></i></a>
+               <span>
+                  <h5>uzh_info@gmail.com</h5>
+                  <p>Email us your query</p>
+               </span>
+            </div>
+         </div>
+         <div class="contact-col">
+            <form action="form-handler.php" method="post" class="comment-form">
+               <input type="text" name="name" placeholder="Enter your name" name="" id="" required>
+               <input type="email" name="email" placeholder="Enter email address" required>
+               <input type="text" name="subject" placeholder="Enter your subject" required>
+               <textarea name="" name="message" id="" rows="8" placeholder="Message"></textarea>
+               <button type="submit" class="hero-btn red-btn">SEND MESSAGE</button>
+            </form>
+         </div>
+      </div>
+   </section>
+
+
+   <!-- -----FOOTER----- -->
+   <footer class="footer">
+      <h4>About Us</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam odio molestias 
+         <br> necessitatibus beatae veritatis? Rerum rem delectus magnam?</p>
+         <div class="icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://web.telegram.org/" target="_blank"><i class="fa fa-telegram"></i></a>
+         </div>
+   </footer>
+
+   <!-- -----scripts----- -->
+   <script src="https://kit.fontawesome.com/4fed137227.js" crossorigin="anonymous"></script>
+   <script>
+      let navLinks = document.getElementById("navLinks");
+         function showMenu() {
+            navLinks.style.right = "0";
+         }
+         function hideMenu() {
+            navLinks.style.right = "-300px";
+         }
+
+   </script>
+</body>
+</html>  
